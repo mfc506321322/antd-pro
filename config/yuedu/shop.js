@@ -7,12 +7,13 @@ export default {
       path: '/shop/list',
       name: 'first',
       component: './Shop/List.js',
+      icon: 'read'
+    },
+    {
+      path: '/shop/second',
+      name: 'second',
+      component:  './Shop/Bookform.js',
       icon: 'book'
     }
-    // {
-    //   path: '/shop/second',
-    //   name: 'second',
-    //   component:  './index.js',
-    // }
   ]
 };
