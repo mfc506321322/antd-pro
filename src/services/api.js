@@ -125,3 +125,7 @@ export async function queryNotices() {
 export async function getFakeCaptcha(mobile) {
   return request(`/api/captcha?mobile=${mobile}`);
 }
+
+export async function getShopList() {
+  return request(`http://123.206.55.50:15000/shop/list`);
+}

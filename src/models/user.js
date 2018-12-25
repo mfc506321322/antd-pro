@@ -106,5 +106,14 @@ export default {
         },
       };
     },
+    changeAvatar(state,{payload}){
+      console.log('avatarPayload...',payload)
+      let currentUser = {...state.currentUser};
+      currentUser.avatar = payload;
+      return {
+        ...state,
+        currentUser
+      }
+    } 
   },
 };

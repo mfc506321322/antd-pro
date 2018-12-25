@@ -348,6 +348,9 @@ class TableList extends PureComponent {
     dispatch({
       type: 'rule/fetch',
     });
+    dispatch({
+      type: 'shop/getList'
+    });
   }
 
   handleStandardTableChange = (pagination, filtersArg, sorter) => {
@@ -477,6 +480,7 @@ class TableList extends PureComponent {
 
   handleUpdate = fields => {
     const { dispatch } = this.props;
+    console.log('fields...',fields);
     dispatch({
       type: 'rule/update',
       payload: {
